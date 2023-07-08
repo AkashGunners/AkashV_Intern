@@ -1,0 +1,252 @@
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard for Admin</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/4d94d6d448.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+
+  </head>
+  <body>
+    <!-- SIDE NAVBAR -->
+      <div class="container">
+        <aside class="">
+          <div class="top">
+            <div class="logo">
+              <img src="../images/logo.png" alt="">
+              <h2>AD<span class="danger">MIN</span></h2>
+
+            </div>
+            <div class="close" id="close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="sidebar">
+              <i class="fa fa-dashboard" style="font-size:16px"></i>
+              <h3>Dashboard</h3>
+          </div>
+          <div class="sidebar">
+              <i class="fa-sharp fa-solid fa-file-invoice"></i>
+              <h3 id="orders">Orders</h3>
+          </div>
+          <div class="sidebar">
+              <i class="fa-sharp fa-solid fa-envelope"></i>
+              <h3>Messages</h3>
+          </div>
+          <div class="sidebar">
+             <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+              <h3 id="reports">Reports</h3>
+          </div>
+          <div class="sidebar">
+              <i class="fa-sharp fa-solid fa-gear"></i>
+              <h3 id="settings">Settings</h3>
+          </div>
+          <div class="sidebar">
+              <i class="fa-sharp fa-solid fa-plus"></i>
+              <h3>Add Details</h3>
+          </div>
+        </aside>
+
+     <!-- <<< MAIN SECTION >>> -->
+
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date" name="" value="">
+
+            </div>
+            <div class="insights">
+              <div class="sales">
+                <span><i class="fa-solid fa-universal-access"></i></span>
+                <div class="middle">
+                  <div class="lef">
+                      <h3>Total Sales</h3>
+                      <h1>Rs 250000</h1>
+                  </div>
+
+                  <div class="progress">
+                    <svg>
+                      <circle cx='38' cy='39' r='36'></circle>
+                    </svg>
+                    <div class="number">
+                      <p>81%</p>
+                    </div>
+                  </div>
+
+                </div>
+                <small class="tex-muted">Last 24 hours</small>
+              </div>
+              <!-- END OF SALES -->
+              <div class="expense">
+                <span><i class="fa-sharp fa-solid fa-magnifying-glass-chart"></i></span>
+                <div class="middle">
+                  <div class="lef">
+                      <h3>Total Expenses</h3>
+                      <h1>Rs 14873</h1>
+                  </div>
+
+                  <div class="progress">
+                    <svg>
+                      <circle cx='38' cy='39' r='36'></circle>
+                    </svg>
+                    <div class="number">
+                      <p>42%</p>
+                    </div>
+                  </div>
+
+                </div>
+                <small class="tex-muted">Last 24 hours</small>
+              </div>
+              <!-- END OF EXPENSE -->
+              <div class="income">
+                <span><i class="fa-sharp fa-solid fa-magnifying-glass-chart"></i></span>
+                <div class="middle">
+                  <div class="lef">
+                      <h3>Total Income</h3>
+                      <h1>Rs 679400</h1>
+                  </div>
+
+                  <div class="progress">
+                    <svg>
+                      <circle cx='38' cy='39' r='36'></circle>
+                    </svg>
+                    <div class="number">
+                      <p>73%</p>
+                    </div>
+                  </div>
+
+                </div>
+                <small class="tex-muted">Last 24 hours</small>
+              </div>
+              <!-- END OF INCOME -->
+            </div>
+            <!-- END OF INSIGHTS -->
+
+            <div class="recent-order">
+              <h2>Recent Orders</h2>
+              <table>
+                <thead>
+                  <tr class="head-width">
+                    <th>Product Name</th>
+                    <th>Product Number</th>
+                    <th>Payment</th>
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+
+              </table>
+              <a href="#">Show All</a>
+            </div>
+        </main>
+        <!-- END OF MAIN -->
+
+        <div class="right">
+          <div class="top">
+            <div class="profile">
+              <div class="info">
+                <p>Hey, <b>User</b> </p>
+                <small class="text-muted">Admin</small>
+              </div>
+              <div class="profile-photomain">
+                <img src="../images/profile-1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- END OF TOP -->
+          <div class="recent-updates">
+            <h2>Recent Updates</h2>
+            <div class="updates">
+              <div class="update">
+                <div class="profile-photo">
+                  <img src="../images/profile-2.jpg" alt="">
+                </div>
+                <div class="message">
+                  <p> <b>John</b> recieved his order of the laptop </p>
+                  <small class="text-muted">2 Minutes Ago</small>
+                </div>
+              </div>
+              <div class="update">
+                <div class="profile-photo">
+                  <img src="../images/profile-3.jpg" alt="">
+                </div>
+                <div class="message">
+                  <p> <b>Abhin</b> recieved his order of Apple Watch </p>
+                  <small class="text-muted">5 Minutes Ago</small>
+                </div>
+              </div>
+              <div class="update">
+                <div class="profile-photo">
+                  <img src="../images/profile-4.jpg" alt="">
+                </div>
+                <div class="message">
+                  <p> <b>Alan</b> recieved his order of the shoes</p>
+                  <small class="text-muted">45 Seconds Ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END OF RECENT UPDATES -->
+
+          <div class="sales-analytics">
+            <h2>Sales Analytics</h2>
+            <div class="item online">
+              <div class="icon">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+              </div>
+              <div class="right">
+                <div class="info">
+                  <h3>ONLINE ORDERS</h3>
+                  <small class="text-muted">Last 24 Hours</small>
+                </div>
+                </div>
+                <h5 class="success">+39%</h5>
+                <h3>3849</h3>
+
+            </div>
+            <div class="item offline">
+              <div class="icon">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+              </div>
+              <div class="right">
+                <div class="info">
+                  <h3>OFFLINE ORDERS</h3>
+                  <small class="text-muted">Last 24 Hours</small>
+                </div>
+              </div>
+                <h5 class="success">-17%</h5>
+                <h3>1100</h3>
+              </div>
+              <div class="item customers">
+                <div class="icon">
+                  <span><i class="fa-solid fa-user"></i></span>
+                </div>
+                <div class="right">
+                  <div class="info">
+                    <h3>NEW CUSTOMERS</h3>
+                    <small class="text-muted">Last 24 Hours</small>
+                  </div>
+                  </div>
+                  <h5 class="success">+25%</h5>
+                  <h3>849</h3>
+
+              </div>
+              <div class="item add-product">
+                <div>
+                  <span><i class="fa-solid fa-plus"></i>
+                    <h3>Add Product</h3>
+                  </span>
+
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      </script>
+      <script type="text/javascript" src="../JS/index.js"></script>
+  </body>
+</html>

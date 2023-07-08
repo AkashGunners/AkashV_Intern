@@ -1,0 +1,70 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Form</title>
+  <link rel="stylesheet" href="../CSS/Order.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+
+</head>
+<body>
+  <div class="container">
+  <form id="submit-form" method="POST"  action="https://script.google.com/macros/s/AKfycbxQGvAmTN8z1NbddVhZ48xiN6riHkLUJ6pFaT5ftQscmizSLj1qlFjdrnoTkIipGVhw/exec">
+    <div class="form-group">
+      <label for="product-name" class="text-add">Product Name:</label>
+      <input type="text" id="product-name" name="product-name" placeholder="Enter product name" required>
+    </div>
+    <div class="form-group">
+      <label for="product-number" class="text-add">Product Number:</label>
+      <input type="text" id="product-number" name="product-number" placeholder="Enter product number" required>
+    </div>
+    <div class="form-group">
+      <label for="payment" class="text-add">Payment</label>
+      <input type="text" id="payment" name="payment" placeholder="Enter payment information" required>
+    </div>
+    <div class="form-group">
+      <label for="status" class="text-add">Status:</label>
+      <select id="status" name="status" required>
+        <option value="" disabled selected>Select status</option>
+        <option value="Pending">Pending</option>
+        <option value="In Progress">Delivered</option>
+        <option value="Completed">Refunded</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="customer-name" class="text-add">Customer Name:</label>
+      <input type="text" id="customer-name" name="customer-name" placeholder="Enter customer name" required>
+    </div>
+    <div class="form-group">
+      <label for="customer-place" class="text-add">Customer Place:</label>
+      <input type="text" id="customer-place" name="customer-place" placeholder="Enter customer place" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<!-- <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbxQGvAmTN8z1NbddVhZ48xiN6riHkLUJ6pFaT5ftQscmizSLj1qlFjdrnoTkIipGVhw/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+
+                }
+            })
+        })
+    </script> -->
+</body>
+</html>
