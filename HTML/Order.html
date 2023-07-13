@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="container">
-  <form id="submit-form" method="POST"  action="https://script.google.com/macros/s/AKfycbxQGvAmTN8z1NbddVhZ48xiN6riHkLUJ6pFaT5ftQscmizSLj1qlFjdrnoTkIipGVhw/exec">
+  <form id="submit-form" method="post" action="https://script.google.com/macros/s/AKfycby9AvaUQPm1GvQItH0R4w38141sbSmZ94DK1htVfVT-Zawdf9Cv0obzVdQTrGqCDMu_KA/exec">
     <div class="form-group">
       <label for="product-name" class="text-add">Product Name:</label>
       <input type="text" id="product-name" name="product-name" placeholder="Enter product name" required>
@@ -54,14 +54,17 @@
                 url:"https://script.google.com/macros/s/AKfycbxQGvAmTN8z1NbddVhZ48xiN6riHkLUJ6pFaT5ftQscmizSLj1qlFjdrnoTkIipGVhw/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
-                success:function (response){
+                success:function hh(response){
                     alert("Form submitted successfully")
                     window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-                    alert("Something Error")
 
+                // },window.location.href="https://google.com"
+                },
+                error:function gg(err){
+                  console.log(err);
+
+                    alert("Something Error")
+                    console.log(err);
                 }
             })
         })
